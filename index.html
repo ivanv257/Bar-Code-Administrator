@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v4.0.1">
+  <title>Floating labels example · Bootstrap</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/floating-labels/">
+  <script language="JavaScript" type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+<!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  
+<!-- Custom CSS -->
+<link rel="stylesheet" href="style.css">
+
+  <!--Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <form class="form-signin" id="form_barCodeAdmin">
+    <div class="text-center mb-4">
+      <h1 class="h3 mb-3 font-weight-normal">Barcode Administrator</h1>
+    </div>
+
+<!-- Select User Dropdown Menu-->
+    <div class="text-center mb-4">
+      <div class="btn-group">
+        <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          User
+          <span class="caret"></span>
+        </button>
+        <div class="dropdown-menu" id="dropdown_Users" aria-labelledby="dropdownMenu1">
+          <a class="dropdown-item" href="#" data-value="Admin-0">Admin-0</a>
+          <a class="dropdown-item" href="#" data-value="Admin-1">Admin-1</a>
+          <a class="dropdown-item" href="#" data-value="Admin-2">Admin-2</a>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Location
+          <span class="caret"></span>
+        </button>
+        <div class="dropdown-menu" id="dropdown_Locations" aria-labelledby="dropdownMenu1">
+          <a class="dropdown-item" href="#" data-value="Location-1">Pretoria</a>
+          <a class="dropdown-item" href="#" data-value="Location-2">Oudtshoorn</a>
+          <a class="dropdown-item" href="#" data-value="Location-3">Beaufort West</a>
+          <a class="dropdown-item" href="#" data-value="Location-3">Tsitsikamma</a>
+        </div>
+      </div>
+    </div>
+
+<!-- Range Input Groups-->
+    <div class="form-label-group">
+      <input type="number" min="0" id="start__range" class="form-control" placeholder="Start Range" required autofocus>
+      <label for="start__range">Start Range</label>
+    </div>
+
+    <div class="form-label-group">
+      <input type="number" min="0" id="end__range" class="form-control" placeholder="End Range" required autofocus>
+      <label for="end__range">End Range</label>
+    </div>
+    
+<!-- Javascript Barcode Range Results below -->
+    <div class="text-center mb-4" id="range__Results">
+
+    </div>
+
+    <button class="btn btn-lg btn-dark btn-block" id="bill__button" type="submit">Done</button>
+
+  </form>
+  
+</body>
+<script src="app.js"></script>
+<!-- Bootstrap JS Files ------------------------>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>
